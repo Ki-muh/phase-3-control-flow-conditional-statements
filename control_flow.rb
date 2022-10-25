@@ -1,8 +1,8 @@
 def admin_login(username, password)
   # your code here
-  if username="admin" && password="12345"
+  if username=="admin" && password=="12345"
     "Access granted"
-  elsif username="ADMIN" && password="12345"
+  elsif username=="ADMIN" && password=="12345"
     "Access granted"
   else
     "Access denied"
@@ -25,15 +25,16 @@ end
 def fizzbuzz(num)
   # your code here
   case
-  when num = 3*5
+  when num % 3 == 0 && num % 5 == 0
     "FizzBuzz"
-  when num = 3
+  when num % 3 == 0 #num/3 == Integer
     "Fizz"
-  when num = 5
+  when num % 5 == 0 #num/5 == Integer
     "Buzz"
   else
     num
   end
+  
 end
 
 def calculator(operation, num1, num2)
